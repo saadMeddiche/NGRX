@@ -5,7 +5,17 @@
   "projects": {
     "taskflowngrx": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "standalone": false
+        },
+        "@schematics/angular:directive": {
+          "standalone": false
+        },
+        "@schematics/angular:pipe": {
+          "standalone": false
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -93,6 +103,6 @@
     }
   },
   "cli": {
-    "analytics": false
+    "analytics": "6260b15a-2d27-4f0e-a87f-6d4283404541"
   }
 }
