@@ -1,0 +1,13 @@
+<div class="book-item card" *ngFor="let book of books">
+  <div class="card-body">
+    <h5 class="card-title">{{book.volumeInfo.title}}</h5>
+    <p class="card-text">by {{book.volumeInfo.authors}}</p>
+    <button
+      class="btn btn-danger"
+      (click)="removee.emit(book.id)"
+      data-test="remove-button"
+    >
+      Remove from Collectio
+    </button>
+  </div>
+</div>
